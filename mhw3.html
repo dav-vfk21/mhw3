@@ -1,0 +1,277 @@
+    <!DOCTYPE html>
+  <html>
+    <head>
+      <title>TV TIME </title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="mhw3.css">
+    <script src ="mhw3.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+      <nav class="schermata_logo">
+        <div class="interno_logo"> 
+            <a class="Postazione base"href="mhw3.html">
+                <img src="tvtime-logo.png">
+            </a>
+            <div class="offcanvas-body">
+                <div class="justify-content_start_flex-grow-1_nav">
+                    <div id="link">
+                      <div class="dropdown_serie">
+                        <div id="serie"><strong>Serie</strong></div>
+                        <button class="bottone_serie"><img src="freccia_giù.png"></button>
+                        <div id="pulsante_giù_serie" class="hidden1">
+                            <a href="mhw3.html">Di tendenza</a>
+                            <a href="mhw3.html">I più aggiunti</a>
+                            <a href="mhw3.html">Più visti</a>
+                            <a href="mhw3.html">Le più viste</a>
+                        </div>
+                      </div>
+                      <div class="dropdown_film">
+                        <div id="film"><strong>Film</strong></div>
+                        <button class="bottone_film"><img src="freccia_giù.png"></button>
+                        <div id="pulsante_giù_film" class="hidden2">
+                            <a href="mhw3.html">Di tendenza</a>
+                            <a href="mhw3.html">I più aggiunti</a>
+                        </div>
+                      </div>
+                       <div class="dropdown_generi">
+                        <div id="generi"><strong>Generi</strong></div>
+                            <button class="bottone_generi"><img src="freccia_giù.png"></button>
+                            <div id="pulsante_giù_generi" class="hidden3">
+                                <div class="sezione_generi">
+                                <a href="mhw3.html">Animazione</a>
+                                <a href="mhw3.html">Anime</a>
+                                <a href="mhw3.html">Arti Marziali</a>
+                                <a href="mhw3.html">Avventura</a>
+                                <a href="mhw3.html">Azione</a>
+                                <a href="mhw3.html">Casa e giardino</a>
+                                <a href="mhw3.html">Commedia</a>
+                                <a href="mhw3.html">Commedia romantica</a>
+                                <a href="mhw3.html">Crimine</a>
+                                <a href="mhw3.html">Cucina</a>
+                                <a href="mhw3.html">Documentario</a>
+                                <a href="mhw3.html">Drammatico</a>
+                                <a href="mhw3.html">Famiglia</a>
+                                <a href="mhw3.html">Fantasy</a>
+                                <a href="mhw3.html">Game show</a>
+                                <a href="mhw3.html">Guerra</a>
+                                <a href="mhw3.html">Horror</a>
+                                <a href="mhw3.html">Indie</a>
+                                <a href="mhw3.html">Mistero</a>
+                                <a href="mhw3.html">Musical</a>
+                                <a href="mhw3.html">Notizie</a>
+                                <a href="mhw3.html">Reality</a>
+                                <a href="mhw3.html">Soap opera</a>
+                                <a href="mhw3.html">Sport</a>
+                                <a href="mhw3.html">Storico </a>
+                                <a href="mhw3.html">Suspance</a>
+                                <a href="mhw3.html">Talk show </a>
+                                <a href="mhw3.html">Thriller</a>
+                                <a href="mhw3.html">Viaggi </a>
+                                <a href="mhw3.html">Western</a>
+                                </div>
+                            </div>
+                       </div>
+                    <form class="ricerca">
+                        <label for="titolo"><img src="icona_ricerca.png">
+                        <input type="submit" id="submit" value="Cerca titoli"> 
+                        <input type="text" id="titolo">
+                        </label>
+                    </form>
+                    
+                    <section id="generi-view-film">
+                    
+                    </section>
+                    <section id="generi-view-serie">
+                    
+                    </section>
+
+
+                    <section id="modal-view" class="hiddenPhotos">
+
+                    </section>
+
+                     </div>
+                <div class="credenziali"> 
+                    <a href="mhw3.html"> Accedi</a> | <a href="mhw3.html">Registrati</a>
+             </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+      <main>
+    <header>
+        <div class="homepage1">
+            <div class="homepage2">
+                <h1 class="scritta">Unisciti alla più grande community di fan di Serie Tv e film</h1>
+                <a href="mhw3.html"class="pulsante_iscriviti" >REGISTRATI GRATUITAMENTE</a>
+            <div class="immagine_destra">
+                <img src="home_phones.png">
+            </div>
+           </div>
+        </div>
+    </header>
+    <section class="tv-tendenza">
+        <div class="titolo_section1"> 
+            <a href="mhw3.html">
+                <h2>Serie TV di tendenza<img src="freccia_section.png"></h2></a>
+            <h3>Serie con più reazioni negli ultimi 3 giorni</h3>
+        </div> 
+        <button id="scorri-serie-sinistra"><img src="scorrimento_sinistra.png"></button>
+        <button id="scorri-serie-destra"><img src="scorrimento_destra.png"></button>
+        <div id="visioni-popolari-serie"></div>
+    </section>
+    <section class="film-tendenza"> 
+       <div class="titolo_section2">
+            <a href="mhw3.html">
+                <h2>Film di tendenza<img src="freccia_section.png"></h2></a>
+            <h3>Film con più reazioni negli ultimi 3 giorni</h3>
+        </div>
+        <button id="scorri-film-sinistra"><img src="scorrimento_sinistra.png"></button>
+        <button id="scorri-film-destra"><img src="scorrimento_destra.png"></button>
+            <div id="visioni-popolari-film"></div>
+        </div>
+    </section>
+    </main>
+
+
+    <section class ="container_generi">
+        <div class="header_generi">
+            <h2>Cerca per genere</h2>
+        </div>
+        <div class="header_generi_container">
+        <a href="mhw3.html"><div>Animazione</div></a>
+        <a href="mhw3.html"><div>Anime</div></a>
+        <a href="mhw3.html"><div>Arti Marziali</div></a>
+        <a href="mhw3.html"><div>Avventura</div></a>
+        <a href="mhw3.html"><div>Azione</div></a>
+        <a href="mhw3.html"><div>Casa e giardino</div></a>
+        <a href="mhw3.html"><div>Commedia</div></a>
+        <a href="mhw3.html"><div>Commedia romantica</div></a>
+        <a href="mhw3.html"><div>Crimine</div></a>
+        <a href="mhw3.html"><div>Cucina</div></a>
+        <a href="mhw3.html"><div>Documentari</div></a>
+        <a href="mhw3.html"><div>Dramma</div></a>
+        <a href="mhw3.html"><div>Famiglia</div></a>
+        <a href="mhw3.html"><div>Fantascienza</div></a>
+        <a href="mhw3.html"><div>Fantasy</div></a>
+        <a href="mhw3.html"><div>Game show</div></a>
+        <a href="mhw3.html"><div>Guerra</div></a>
+        <a href="mhw3.html"><div>Horror</div></a>
+        <a href="mhw3.html"><div>Indie</div></a>
+        <a href="mhw3.html"><div>Mistero</div></a>
+        <a href="mhw3.html"><div>Musical</div></a>
+        <a href="mhw3.html"><div>Notizie</div></a>
+        <a href="mhw3.html"><div>Reality</div></a>
+        <a href="mhw3.html"><div>Soap opera</div></a>
+        <a href="mhw3.html"><div>Sport</div></a>
+        <a href="mhw3.html"><div>Storico</div></a>
+        <a href="mhw3.html"><div>Suspance</div></a>
+        <a href="mhw3.html"><div>Talk show</div></a>
+        <a href="mhw3.html"><div>Thriller</div></a> 
+        <a href="mhw3.html"><div>Viaggi</div></a>
+        <a href="mhw3.html"><div>Western</div></a>
+        </div>
+    </section>
+
+    <footer class="footer_e_sottofooter">
+        <div class="footer_conteiner">
+            <div class="row">
+                <div class="colonna_sinistra">
+            <div class="row">
+       <div class="colonna_primaria">
+                <div class="vstack">
+                     <div class="navbar_brand">
+             <a href="mhw3.html">
+                 <img src="tvtime-icon-flat-square.png">
+             </a>
+       <div class="dropdown_lingua">
+        <button id="lingua" >Italiano <img src="freccia_giù.png"></button>
+        <div id="lingue" class="hidden4">
+            <a href="mhw3.html">Italiano</a>
+            <a href="mhw3.html">Inglese</a>
+            <a href="mhw3.html">Spagnolo</a>
+            <a href="mhw3.html">Francese</a>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+           <div class="colonna_azienda">
+                <h5 class="testo_di_riferimento1">Azienda</h5>
+                <div class="container-info">
+                    <div class="info"> 
+                    <a href="https://www.tvtime.com/it/about">Info</a>
+                 </div>
+                    <div class="articoli">
+                        <a href="https://www.tvtime.com/articles">Articolo</a>
+                </div>
+                <div class="team">
+                    <a href="https://whipmedia.com/careers/">Lavora con noi</a>
+                </div>
+                <div class="privacy1">
+                    <a href="https://www.tvtime.com/it/privacy">Regolamento sulla privacy</a>
+                </div>
+                <div class="privacy2">
+                    <a href="https://www.tvtime.com/it/privacy">CA Privacy Policy</a>
+                </div>
+                <div class="privacy3">
+                    <a href="https://www.tvtime.com/it/terms">Condizioni d'uso</a>
+                </div>
+              </div>
+             </div>
+            <div class="colonna_link">
+                <h5 class="testo_di_riferimento2">Link utili</h5>
+                <div class="link_utili">
+                <div class="supporto">
+                    <a href="https://tvtime.zendesk.com/hc/it">Supporto</a>
+                </div>
+                <div class="contatto">
+                     <a href="https://www.tvtime.com/it/about#contact">Contatto</a>
+                    </div>
+                </div>
+        </div>  
+            <div class="colonna_social">
+                <h5 class="testo_di_riferimento3">Seguici</h5>
+                <div class="link_social">
+                    <a href="https://www.facebook.com/tvtimeapp"><img src="facebook.jpg"></a>
+                    <a href="https://www.instagram.com/tvtimeapp/"><img src="instagram.png"></a>
+                    <a href ="https://x.com/tvtime"><img src="x.png"></a>
+                </div>
+                </div>
+                </div>
+                </div>
+            
+              <div class="footer_download">
+                <h3>Scarica l'app di TV TIME</h3>
+                <div class="row">
+                    <div class="footer_qr_code"><img src="qr_code.png"></div>
+                </div>
+            <div class="footer_playstore">
+                    <a href="https://play.google.com/store/apps/details?id=com.tozelabs.tvshowtime&hl=it&pli=1">
+                        <img src="play.png">
+                    </a>
+                    <a href="https://apps.apple.com/it/app/tv-time-monitora-serie-e-film/id431065232">
+                        <img src="appstore.png">
+                    </a>
+            </div>
+              </div>
+
+            </div>
+    </div>
+        <section class="footer_copyright">
+            <div class="container">
+                <div class="row">
+            <div class="col">
+               <div class="text-center"> 2025,TV TIME,a Whip Media Company
+                 </div>
+               </div>
+           </div>
+        </div>
+    </div>
+      </section>
+    </footer>
+  </body>
+</html>
